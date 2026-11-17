@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Melek'in web geliştirme portfolyosu">
+    <title>Portfolyom | Dinamik Vitrin</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="bg-blur" aria-hidden="true"></div>
+
+    <nav class="navbar">
+        <a class="logo" href="#">Melekcoder</a>
+
+        <div class="nav-links">
+            <a href="#projeler">Projeler</a>
+            <a href="#yetenekler">Yetenekler</a>
+            <a href="#iletisim">İletişim</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="profile-container">
+            <img src="profil.png" alt="Melek'in profil fotoğrafı" class="profile-image">
+        </div>
+
+        <h1>Yaratıcı <span>Frontend</span> Dünyası</h1>
+        <p>Hayalimdeki tasarımları kodla gerçeğe dönüştürüyorum.</p>
+        <a href="#projeler" class="cta-btn">Projeleri keşfet</a>
+    </header>
+
+    <main>
+        <section id="projeler" class="projects section">
+            <h2 class="section-title">Neler yaptım?</h2>
+
+            <div class="grid-container">
+                <button class="card reveal" type="button">
+                    <span class="card-icon" aria-hidden="true">🧴</span>
+                    <h3>Cilt Bakım Rehberi</h3>
+                    <p>Kullanıcıların cilt bakımı için uygun bir rutin oluşturmasına yardımcı olan bir site.</p>
+                </button>
+
+                <button class="card reveal" type="button">
+                    <span class="card-icon" aria-hidden="true">⏱️</span>
+                    <h3>Geri Sayım Sayacı</h3>
+                    <p>Sınava hazırlanan öğrencilerin çalışma sürelerini ayarlayabileceği bir site.</p>
+                </button>
+
+                <button class="card reveal" type="button">
+                    <span class="card-icon" aria-hidden="true">✅</span>
+                    <h3>To Do List</h3>
+                    <p>Kullanıcıların günlük görevlerini düzenlemesine yardımcı olan bir proje.</p>
+                </button>
+            </div>
+        </section>
+
+        <section id="yetenekler" class="skills-section section reveal">
+            <h2 class="section-title">Teknik yeteneklerim</h2>
+
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML5</span><span>%90</span></div>
+                    <div class="progress-line" data-width="90%">
+                        <span style="--bar-color: #e34f26"></span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info"><span>CSS3</span><span>%85</span></div>
+                    <div class="progress-line" data-width="85%">
+                        <span style="--bar-color: #3b82f6"></span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info"><span>JavaScript</span><span>%80</span></div>
+                    <div class="progress-line" data-width="80%">
+                        <span style="--bar-color: #a855f7"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="iletisim">
+        <h2>Bana ulaşın</h2>
+
+        <div class="social-links">
+            <a href="https://github.com/melekkrkoc-coder" class="social-icon" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/melek-karakoç-9b86b043a?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:melekk.745934@gmail.com" class="social-icon" aria-label="E-posta">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span>E-posta</span>
+            </a>
+        </div>
+
+        <p>© 2026 Melekcoder. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <button id="scrollTopBtn" type="button" title="Yukarı çık" aria-label="Sayfanın başına dön">↑</button>
+
+    <div id="projectModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="close-btn" type="button" aria-label="Pencereyi kapat">&times;</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <div class="modal-tags">
+                <span>#HTML</span>
+                <span>#CSS</span>
+                <span>#JavaScript</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
